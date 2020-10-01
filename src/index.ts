@@ -32,5 +32,5 @@ class Builder<T extends Step[]> {
 
 new Builder<[]>([])
     .addCreatedProperty('first', () => 1)
-    .addCreatedProperty('another', () => 2)
+    .addStaticProperty('second', 2)
     .result(result => result.data.first)
